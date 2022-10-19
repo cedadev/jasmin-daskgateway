@@ -10,12 +10,16 @@ import dask_gateway
 # Create a connection to dask-gateway.
 gw = dask_gateway.Gateway("https://dask-gateway.jasmin.ac.uk", auth="jupyterhub")
 
+# Inspect and change the options if required before creating your cluster.
+options = gw.cluster_options()
+options.worker_cores = 2
+
 # Create a dask cluster, or, if one already exists, connect to it.
 # This stage creates the scheduler job in SLURM, so may take some time.
 # While your job queues.
 clusters = gw.list_clusters()
 if not clusters:
-    cluster = gw.new_cluster(shutdown_on_close=False)
+    cluster = gw.new_cluster(options, shutdown_on_close=False)
 else:
     cluster = gw.connect(clusters[0].name)
 
