@@ -1,4 +1,4 @@
-# Using Dask on in Lotus from the JASMIN Notebooks Service.
+# Using Dask in Lotus from the JASMIN Notebooks Service.
 Using dask in Lotus requires connecting to a proxy service, called dask-gateway, which will create Lotus jobs on your behalf and proxy communication between your dask client and the dask clusters running in Lotus.
 
 
