@@ -34,3 +34,7 @@ When you are done, and whish to release your cluster:
 ```python
 cluster.shutdown()
 ```
+
+## Other information and FAQs.
+### Accessing the dask dashboard.
+Currently the dask dashboard is not accessible from a browser outside the JASMIN firewall. If you're browser fails to load the dashboard link returned, please use our [interactive login service](https://help.jasmin.ac.uk/article/4810-graphical-linux-desktop-access-using-nx) to run a browser inside the firewall to view your dashboard.
