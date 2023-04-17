@@ -1,7 +1,7 @@
 # Using Dask in Lotus from the JASMIN Notebooks Service.
 Using dask in Lotus requires connecting to a proxy service, called dask-gateway, which will create Lotus jobs on your behalf and proxy communication between your dask client and the dask clusters running in Lotus.
 
-Before using dask gateway on JASMIN, you first need to apply for the "dask" service on the JASMIN accounts portal, which you can do so here: https://accounts.jasmin.ac.uk/services/additional_services/dask/
+Before using dask gateway on JASMIN, you **first need to apply for the "dask" service on the JASMIN accounts portal**, which you can do so here: https://accounts.jasmin.ac.uk/services/additional_services/dask/
 
 ## Creating a dask cluster.
 To create and connect to a dask cluster, you can use the following python snippet. Note that this will only work on the JASMIN Notebook service.
